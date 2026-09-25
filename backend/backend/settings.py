@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '123.123.123.123', 'backend']
+ALLOWED_HOSTS = ['localhost', '123.123.123.123', 'backend', 'dedaku1a.hopto.org']
 
 
 # Application definition
@@ -120,4 +120,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000'
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://dedaku1a.hopto.org',
+    'https://dedaku1a.hopto.org',
 ]
